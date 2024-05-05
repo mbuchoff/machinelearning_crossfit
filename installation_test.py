@@ -76,11 +76,10 @@ for workout in workout_log:
 df = pd.DataFrame(flattened_data)
 
 # Split into features and labels
-X = df[["workout"]]
+X = np.array(df["workout"])
 y = df["time_minutes"]
 
 # Split data into training and test sets
-# array([[0., 1., 1., 1., 0.,
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Create a TensorFlow model
