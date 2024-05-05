@@ -68,7 +68,7 @@ for workout in workout_log:
         flattened_movements.append(movement["repetitions"])
         flattened_movements.append(movement["weight"])
     flattened_data.append({
-        "workout": array("i", flattened_movements),
+        "workout": np.array(flattened_movements),
         "time_minutes": workout["time_minutes"]
     })
 
@@ -84,7 +84,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Create a TensorFlow model
 model = tf.keras.Sequential([
-    tf.keras.layers.Dense(64, activation='relu', input_shape=(X.shape[1],)),
+    tf.keras.layers.Dense(64, activation='relu', input_shape=(len(X[0]),)),
     tf.keras.layers.Dense(32, activation='relu'),
     tf.keras.layers.Dense(1)  # Predicting a single numerical value
 ])
