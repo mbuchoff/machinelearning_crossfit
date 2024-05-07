@@ -60,35 +60,23 @@ valid_movements = [
 ]
 
 # Combine all movements for each date into a single textual feature
-flattened_data = []
 maxLen = 0
 for workout in workout_log:
-    flattened_movements = [float(workout["date"].toordinal())]
-    for movement in workout["movements"]:
-        flattened_movements.append(float(valid_movements.index(movement["movement"])))
-        flattened_movements.append(float(movement["repetitions"]))
-        flattened_movements.append(float(movement["weight"]))
-    maxLen = max(maxLen, len(flattened_movements))
-    flattened_data.append({
-        "workout": np.array(flattened_movements),
-        "time_minutes": workout["time_minutes"]
-    })
+    maxLen = max(maxLen, len(workout["movements"]))
 
-reshaped_flattened_data=[]
-for datum in flattened_data:
-    padding = max(0, maxLen - len(datum["workout"]))
-    reshaped_datum = np.pad(datum["workout"], (0, padding), mode='constant', constant_values=float(0))
-    datum["workout"] = reshaped_datum
+X = np.empty((len(workout_log), maxLen*3 + 1))
+Y = np.empty(len(workout_log))
 
-# Create a DataFrame
-df = pd.DataFrame(flattened_data)
-
-# Split into features and labels
-X = np.array(df["workout"])
-y = df["time_minutes"]
+for workoutIdx, workout in enumerate(workout_log):
+    X[workoutIdx, 0] = workout["date"].toordinal()
+    Y[workoutIdx] = workout["time_minutes"]
+    for movementIdx, movement in enumerate(workout["movements"]):
+        X[workoutIdx, movementIdx*3 + 1] = float(valid_movements.index(movement["movement"]))
+        X[workoutIdx, movementIdx*3 + 2] = float(movement["repetitions"])
+        X[workoutIdx, movementIdx*3 + 3] = float(movement["weight"])
 
 # Split data into training and test sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
 
 # Create a TensorFlow model
 model = tf.keras.Sequential([
