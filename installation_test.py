@@ -49,6 +49,7 @@ workout_log = [
 ]
 
 valid_movements = [
+    "rest", # 0 for padding
     "alternating pistols",
     "box jumps (don't open hips)",
     "burpees",
@@ -60,17 +61,24 @@ valid_movements = [
 
 # Combine all movements for each date into a single textual feature
 flattened_data = []
+maxLen = 0
 for workout in workout_log:
-    workout_date = workout["date"].toordinal()
-    flattened_movements = []
+    flattened_movements = [float(workout["date"].toordinal())]
     for movement in workout["movements"]:
-        flattened_movements.append(valid_movements.index(movement["movement"]))
-        flattened_movements.append(movement["repetitions"])
-        flattened_movements.append(movement["weight"])
+        flattened_movements.append(float(valid_movements.index(movement["movement"])))
+        flattened_movements.append(float(movement["repetitions"]))
+        flattened_movements.append(float(movement["weight"]))
+    maxLen = max(maxLen, len(flattened_movements))
     flattened_data.append({
         "workout": np.array(flattened_movements),
         "time_minutes": workout["time_minutes"]
     })
+
+reshaped_flattened_data=[]
+for datum in flattened_data:
+    padding = max(0, maxLen - len(datum["workout"]))
+    reshaped_datum = np.pad(datum["workout"], (0, padding), mode='constant', constant_values=float(0))
+    datum["workout"] = reshaped_datum
 
 # Create a DataFrame
 df = pd.DataFrame(flattened_data)
