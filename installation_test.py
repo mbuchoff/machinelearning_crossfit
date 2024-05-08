@@ -24,39 +24,29 @@ workout_log = [
         "time_minutes": 10+32/60
     },
     {
-        "date": date(2024, 5, 2),
+        "date": date(2024, 5, 8),
         "movements": [
-            {"movement": "deadlifts", "repetitions": 20, "weight": 80},
-            {"movement": "box jumps (don't open hips)", "repetitions": 25, "weight": 0},
-        ],
-        "time_minutes": 17
-    },
-    {
-        "date": date(2024, 5, 3),
-        "movements": [
-            {"movement": "burpees", "repetitions": 50, "weight": 0},
+            {"movement": "running", "repetitions": 400, "weight": 0},
+            {"movement": "chest to bars", "repetitions": 10, "weight": 0},
+            {"movement": "running", "repetitions": 400, "weight": 0},
+            {"movement": "chest to bars", "repetitions": 10, "weight": 0},
+            {"movement": "dual kb front rack step-ups, 20\" box", "repetitions": 30, "weight": 53},
+            {"movement": "running", "repetitions": 25, "weight": 0},
         ],
         "time_minutes": 15
     },
-    {
-        "date": date(2024, 5, 4),
-        "movements": [
-            {"movement": "running", "repetitions": 400, "weight": 0},
-            {"movement": "pushups", "repetitions": 40, "weight": 0},
-        ],
-        "time_minutes": 33
-    }
 ]
 
 valid_movements = [
     "rest", # 0 for padding
     "alternating pistols",
-    "box jumps (don't open hips)",
     "burpees",
+    "chest to bars",
     "deadlifts",
+    "dual kb front rack step-ups, 20\" box",
     "pushups",
     "running",
-    "strict pullups"
+    "strict pullups",
 ]
 
 # Combine all movements for each date into a single textual feature
