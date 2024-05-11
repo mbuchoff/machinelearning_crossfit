@@ -35,6 +35,36 @@ workout_log = [
         ],
         "time_minutes": 15
     },
+    {
+        "date": date(2024, 5, 10),
+        "movements": [
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "hang power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+        ],
+        "time_minutes": 7
+    },
+    {
+        "date": date(2024, 5, 10),
+        "movements": [
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "hang power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "rest", "repetitions": 2, "weight": 0},
+            {"movement": "running", "repetitions": 800, "weight": 0},
+        ],
+        "time_minutes": 12+56/60
+    },
 ]
 
 valid_movements = [
@@ -44,6 +74,9 @@ valid_movements = [
     "chest to bars",
     "deadlifts",
     "dual kb front rack step-ups, 20\" box",
+    "hang power cleans",
+    "jumping air squats",
+    "power cleans",
     "pushups",
     "running",
     "strict pullups",
