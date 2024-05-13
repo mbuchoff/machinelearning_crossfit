@@ -65,6 +65,25 @@ workout_log = [
         ],
         "time_minutes": 12+56/60
     },
+    {
+        "date": date(2024, 5, 13),
+        "movements": [
+            {"movement": "running", "repetitions": 200, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 20, "weight": 70},
+            {"movement": "front rack lunges", "repetitions": 20, "weight": 95},
+            {"movement": "rest", "repetitions": 1, "weight": 95},
+            {"movement": "running", "repetitions": 200, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 20, "weight": 70},
+            {"movement": "front rack lunges", "repetitions": 20, "weight": 95},
+            {"movement": "rest", "repetitions": 1, "weight": 95},
+            {"movement": "running", "repetitions": 200, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 20, "weight": 70},
+            {"movement": "front rack lunges", "repetitions": 20, "weight": 95},
+            {"movement": "rest", "repetitions": 1, "weight": 95},
+            {"movement": "running", "repetitions": 200, "weight": 0},
+        ],
+        "time_minutes": 17
+    },
 ]
 
 valid_movements = [
@@ -74,8 +93,10 @@ valid_movements = [
     "chest to bars",
     "deadlifts",
     "dual kb front rack step-ups, 20\" box",
+    "front rack lunges",
     "hang power cleans",
     "jumping air squats",
+    "kettlebell swings",
     "power cleans",
     "pushups",
     "running",
