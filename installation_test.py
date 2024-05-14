@@ -136,11 +136,8 @@ model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 model.fit(X_train, y_train, epochs=20, validation_data=(X_test, y_test), batch_size=4)
 
 # Make predictions on new data
-new_workouts = pd.DataFrame([
-    {"combined_movements": "burpees 60 reps, 0 kg; box jumps 20 reps, 0 kg"},
-    {"combined_movements": "deadlifts 15 reps, 70 kg"}
-])
+new_workouts = X_test[0:2]
 
 # Predict and output results
-predictions = model.predict(new_X_movement_encoded)
+predictions = model.predict(new_workouts)
 print(f"Predicted times for new workouts: {predictions.flatten()}")
