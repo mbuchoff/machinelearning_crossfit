@@ -113,6 +113,7 @@ valid_movements = [
     "kettlebell swings",
     "power cleans",
     "pushups",
+    "ring dips",
     "running",
     "strict pullups",
 ]
