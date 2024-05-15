@@ -84,6 +84,20 @@ workout_log = [
         ],
         "time_minutes": 17
     },
+    {
+        "date": date(2024, 5, 15),
+        "movements": [
+            {"movement": "running", "repetitions": 800, "weight": 0},
+            {"movement": "ring dips", "repetitions": 12, "weight": 0},
+            {"movement": "strict pullups", "repetitions": 8, "weight": 0},
+            {"movement": "ring dips", "repetitions": 12, "weight": 0},
+            {"movement": "strict pullups", "repetitions": 8, "weight": 0},
+            {"movement": "ring dips", "repetitions": 12, "weight": 0},
+            {"movement": "strict pullups", "repetitions": 8, "weight": 0},
+            {"movement": "running", "repetitions": 800, "weight": 0},
+        ],
+        "time_minutes": 12 + (51/60)
+    },
 ]
 
 valid_movements = [
@@ -136,7 +150,7 @@ model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 model.fit(X_train, y_train, epochs=20, validation_data=(X_test, y_test), batch_size=4)
 
 # Make predictions on new data
-new_workouts = X_test[0:2]
+new_workouts = X_test[0]
 
 # Predict and output results
 predictions = model.predict(new_workouts)
