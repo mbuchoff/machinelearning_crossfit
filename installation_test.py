@@ -151,7 +151,7 @@ model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 model.fit(X_train, y_train, epochs=20, validation_data=(X_test, y_test), batch_size=4)
 
 # Make predictions on new data
-new_workouts = X_test[0]
+new_workouts = X_test[0:2]
 
 # Predict and output results
 predictions = model.predict(new_workouts)
