@@ -155,4 +155,5 @@ new_workouts = X_train[0:2]
 
 # Predict and output results
 predictions = model.predict(new_workouts)
-print(f"Predicted times for new workouts: {predictions.flatten()}")
+print("Predictions:", predictions)
+print("Actual:", y_train[0:2])
