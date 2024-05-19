@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
-from array import array
 
 # Hardcoded workout data with combined times for each day
 workout_log = [
@@ -138,11 +137,11 @@ for workoutIdx, workout in enumerate(workout_log):
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
 
 # Create a TensorFlow model
-model = tf.keras.Sequential([
-    tf.keras.layers.Dense(64, activation='relu', input_shape=(len(X[0]),)),
-    tf.keras.layers.Dense(32, activation='relu'),
-    tf.keras.layers.Dense(1)  # Predicting a single numerical value
-])
+model = tf.keras.Sequential()
+model.add(tf.keras.Input(shape=(len(X[0]),)))
+model.add(tf.keras.layers.Dense(64, activation='relu'))
+model.add(tf.keras.layers.Dense(32, activation='relu'))
+model.add(tf.keras.layers.Dense(1))  # Predicting a single numerical value
 
 # Compile the model
 model.compile(optimizer='adam', loss='mse', metrics=['mae'])
@@ -151,7 +150,8 @@ model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 model.fit(X_train, y_train, epochs=20, validation_data=(X_test, y_test), batch_size=4)
 
 # Make predictions on new data
-new_workouts = X_test[0:2]
+#new_workouts = X_test[0:2]
+new_workouts = X_train[0:2]
 
 # Predict and output results
 predictions = model.predict(new_workouts)
