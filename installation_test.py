@@ -97,6 +97,18 @@ workout_log = [
         ],
         "time_minutes": 12 + (51/60)
     },
+    {
+        "date": date(2024, 5, 20),
+        "movements": [
+            {"movement": "push jerks", "repetitions": 7, "weight": 155},
+            {"movement": "front squats", "repetitions": 14, "weight": 155},
+            {"movement": "push jerks", "repetitions": 7, "weight": 155},
+            {"movement": "front squats", "repetitions": 14, "weight": 155},
+            {"movement": "push jerks", "repetitions": 7, "weight": 155},
+            {"movement": "front squats", "repetitions": 3, "weight": 155},
+        ],
+        "time_minutes": 12
+    },
 ]
 
 valid_movements = [
@@ -107,10 +119,12 @@ valid_movements = [
     "deadlifts",
     "dual kb front rack step-ups, 20\" box",
     "front rack lunges",
+    "front squats",
     "hang power cleans",
     "jumping air squats",
     "kettlebell swings",
     "power cleans",
+    "push jerks"
     "pushups",
     "ring dips",
     "running",
