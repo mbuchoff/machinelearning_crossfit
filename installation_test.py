@@ -109,6 +109,18 @@ workout_log = [
         ],
         "time_minutes": 12
     },
+    {
+        "date": date(2024, 5, 23),
+        "movements": [
+            {"movement": "dumbbell snatch", "repetitions": 30, "weight": 50},
+            {"movement": "dumbbell walking lunges", "repetitions": 30, "weight": 50},
+            {"movement": "double unders", "repetitions": 90, "weight": 0},
+            {"movement": "dumbbell snatch", "repetitions": 30, "weight": 50},
+            {"movement": "dumbbell walking lunges", "repetitions": 30, "weight": 50},
+            {"movement": "double unders", "repetitions": 22, "weight": 0},
+        ],
+        "time_minutes": 12
+    },
 ]
 
 valid_movements = [
@@ -117,14 +129,17 @@ valid_movements = [
     "burpees",
     "chest to bars",
     "deadlifts",
+    "double unders",
     "dual kb front rack step-ups, 20\" box",
+    "dumbbell snatch",
+    "dumbbell walking lunges",
     "front rack lunges",
     "front squats",
     "hang power cleans",
     "jumping air squats",
     "kettlebell swings",
     "power cleans",
-    "push jerks"
+    "push jerks",
     "pushups",
     "ring dips",
     "running",
@@ -161,7 +176,7 @@ model.add(tf.keras.layers.Dense(1))  # Predicting a single numerical value
 model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 
 # Train the model
-model.fit(X_train, y_train, epochs=20, validation_data=(X_test, y_test), batch_size=4)
+model.fit(X_train, y_train, epochs=2000, validation_data=(X_test, y_test), batch_size=4)
 
 # Make predictions on new data
 #new_workouts = X_test[0:2]
