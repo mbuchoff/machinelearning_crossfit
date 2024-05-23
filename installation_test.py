@@ -10,92 +10,179 @@ workout_log = [
     {
         "date": date(2024, 5, 3),
         "movements": [
-            {"movement": "Alternating Pistols", "repetitions": 20, "weight": 0},
-            {"movement": "Burpees", "repetitions": 15, "weight": 0},
-            {"movement": "Strict Pullups", "repetitions": 10, "weight": 0},
-            {"movement": "Alternating Pistols", "repetitions": 20, "weight": 0},
-            {"movement": "Burpees", "repetitions": 15, "weight": 0},
-            {"movement": "Strict Pullups", "repetitions": 10, "weight": 0},
-            {"movement": "Alternating Pistols", "repetitions": 20, "weight": 0},
-            {"movement": "Burpees", "repetitions": 15, "weight": 0},
-            {"movement": "Strict Pullups", "repetitions": 10, "weight": 0},
+            {"movement": "alternating pistols", "repetitions": 20, "weight": 0},
+            {"movement": "burpees", "repetitions": 15, "weight": 0},
+            {"movement": "strict pullups", "repetitions": 10, "weight": 0},
+            {"movement": "alternating pistols", "repetitions": 20, "weight": 0},
+            {"movement": "burpees", "repetitions": 15, "weight": 0},
+            {"movement": "strict pullups", "repetitions": 10, "weight": 0},
+            {"movement": "alternating pistols", "repetitions": 20, "weight": 0},
+            {"movement": "burpees", "repetitions": 15, "weight": 0},
+            {"movement": "strict pullups", "repetitions": 10, "weight": 0},
         ],
         "time_minutes": 10+32/60
     },
     {
-        "date": date(2024, 5, 2),
+        "date": date(2024, 5, 8),
         "movements": [
-            {"movement": "deadlifts", "repetitions": 20, "weight": 80},
-            {"movement": "box jumps", "repetitions": 25, "weight": None},
-        ],
-        "time_minutes": 17
-    },
-    {
-        "date": date(2024, 5, 3),
-        "movements": [
-            {"movement": "burpees", "repetitions": 50, "weight": None},
+            {"movement": "running", "repetitions": 400, "weight": 0},
+            {"movement": "chest to bars", "repetitions": 10, "weight": 0},
+            {"movement": "running", "repetitions": 400, "weight": 0},
+            {"movement": "chest to bars", "repetitions": 10, "weight": 0},
+            {"movement": "dual kb front rack step-ups, 20\" box", "repetitions": 30, "weight": 53},
+            {"movement": "running", "repetitions": 25, "weight": 0},
         ],
         "time_minutes": 15
     },
     {
-        "date": date(2024, 5, 4),
+        "date": date(2024, 5, 10),
         "movements": [
-            {"movement": "running", "repetitions": None, "weight": None},
-            {"movement": "push-ups", "repetitions": 40, "weight": None},
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "hang power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
         ],
-        "time_minutes": 33
-    }
+        "time_minutes": 7
+    },
+    {
+        "date": date(2024, 5, 10),
+        "movements": [
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "hang power cleans", "repetitions": 7, "weight": 155},
+            {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
+            {"movement": "rest", "repetitions": 2, "weight": 0},
+            {"movement": "running", "repetitions": 800, "weight": 0},
+        ],
+        "time_minutes": 12+56/60
+    },
+    {
+        "date": date(2024, 5, 13),
+        "movements": [
+            {"movement": "running", "repetitions": 200, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 20, "weight": 70},
+            {"movement": "front rack lunges", "repetitions": 20, "weight": 95},
+            {"movement": "rest", "repetitions": 1, "weight": 95},
+            {"movement": "running", "repetitions": 200, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 20, "weight": 70},
+            {"movement": "front rack lunges", "repetitions": 20, "weight": 95},
+            {"movement": "rest", "repetitions": 1, "weight": 95},
+            {"movement": "running", "repetitions": 200, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 20, "weight": 70},
+            {"movement": "front rack lunges", "repetitions": 20, "weight": 95},
+            {"movement": "rest", "repetitions": 1, "weight": 95},
+            {"movement": "running", "repetitions": 200, "weight": 0},
+        ],
+        "time_minutes": 17
+    },
+    {
+        "date": date(2024, 5, 15),
+        "movements": [
+            {"movement": "running", "repetitions": 800, "weight": 0},
+            {"movement": "ring dips", "repetitions": 12, "weight": 0},
+            {"movement": "strict pullups", "repetitions": 8, "weight": 0},
+            {"movement": "ring dips", "repetitions": 12, "weight": 0},
+            {"movement": "strict pullups", "repetitions": 8, "weight": 0},
+            {"movement": "ring dips", "repetitions": 12, "weight": 0},
+            {"movement": "strict pullups", "repetitions": 8, "weight": 0},
+            {"movement": "running", "repetitions": 800, "weight": 0},
+        ],
+        "time_minutes": 12 + (51/60)
+    },
+    {
+        "date": date(2024, 5, 20),
+        "movements": [
+            {"movement": "push jerks", "repetitions": 7, "weight": 155},
+            {"movement": "front squats", "repetitions": 14, "weight": 155},
+            {"movement": "push jerks", "repetitions": 7, "weight": 155},
+            {"movement": "front squats", "repetitions": 14, "weight": 155},
+            {"movement": "push jerks", "repetitions": 7, "weight": 155},
+            {"movement": "front squats", "repetitions": 3, "weight": 155},
+        ],
+        "time_minutes": 12
+    },
+    {
+        "date": date(2024, 5, 23),
+        "movements": [
+            {"movement": "dumbbell snatch", "repetitions": 30, "weight": 50},
+            {"movement": "dumbbell walking lunges", "repetitions": 30, "weight": 50},
+            {"movement": "double unders", "repetitions": 90, "weight": 0},
+            {"movement": "dumbbell snatch", "repetitions": 30, "weight": 50},
+            {"movement": "dumbbell walking lunges", "repetitions": 30, "weight": 50},
+            {"movement": "double unders", "repetitions": 22, "weight": 0},
+        ],
+        "time_minutes": 12
+    },
+]
+
+valid_movements = [
+    "rest", # 0 for padding
+    "alternating pistols",
+    "burpees",
+    "chest to bars",
+    "deadlifts",
+    "double unders",
+    "dual kb front rack step-ups, 20\" box",
+    "dumbbell snatch",
+    "dumbbell walking lunges",
+    "front rack lunges",
+    "front squats",
+    "hang power cleans",
+    "jumping air squats",
+    "kettlebell swings",
+    "power cleans",
+    "push jerks",
+    "pushups",
+    "ring dips",
+    "running",
+    "strict pullups",
 ]
 
 # Combine all movements for each date into a single textual feature
-flattened_data = []
+maxLen = 0
 for workout in workout_log:
-    workout_date = workout["date"]
-    movements_combined = ", ".join([f"{m['movement']} {m['repetitions']} reps, {m['weight']} kg"
-                                    for m in workout["movements"]])
-    flattened_data.append({
-        "date": workout_date,
-        "combined_movements": movements_combined,
-        "time_minutes": workout["time_minutes"]
-    })
+    maxLen = max(maxLen, len(workout["movements"]))
 
-# Create a DataFrame
-df = pd.DataFrame(flattened_data)
+X = np.empty((len(workout_log), maxLen*3 + 1))
+Y = np.empty(len(workout_log))
 
-# Split into features and labels
-X = df[["combined_movements"]]
-y = df["time_minutes"]
-
-# Tokenize and encode the combined movement text feature
-movement_tokenizer = tf.keras.preprocessing.text.Tokenizer()
-movement_tokenizer.fit_on_texts(X["combined_movements"])
-X_movement_encoded = movement_tokenizer.texts_to_matrix(X["combined_movements"], mode='binary')
+for workoutIdx, workout in enumerate(workout_log):
+    X[workoutIdx, 0] = workout["date"].toordinal()
+    Y[workoutIdx] = workout["time_minutes"]
+    for movementIdx, movement in enumerate(workout["movements"]):
+        X[workoutIdx, movementIdx*3 + 1] = float(valid_movements.index(movement["movement"]))
+        X[workoutIdx, movementIdx*3 + 2] = float(movement["repetitions"])
+        X[workoutIdx, movementIdx*3 + 3] = float(movement["weight"])
 
 # Split data into training and test sets
-X_train, X_test, y_train, y_test = train_test_split(X_movement_encoded, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
 
 # Create a TensorFlow model
-model = tf.keras.Sequential([
-    tf.keras.layers.Dense(64, activation='relu', input_shape=(X_movement_encoded.shape[1],)),
-    tf.keras.layers.Dense(32, activation='relu'),
-    tf.keras.layers.Dense(1)  # Predicting a single numerical value
-])
+model = tf.keras.Sequential()
+model.add(tf.keras.Input(shape=(len(X[0]),)))
+model.add(tf.keras.layers.Dense(64, activation='relu'))
+model.add(tf.keras.layers.Dense(32, activation='relu'))
+model.add(tf.keras.layers.Dense(1))  # Predicting a single numerical value
 
 # Compile the model
 model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 
 # Train the model
-model.fit(X_train, y_train, epochs=20, validation_data=(X_test, y_test), batch_size=4)
+model.fit(X_train, y_train, epochs=2000, validation_data=(X_test, y_test), batch_size=4)
 
 # Make predictions on new data
-new_workouts = pd.DataFrame([
-    {"combined_movements": "burpees 60 reps, 0 kg; box jumps 20 reps, 0 kg"},
-    {"combined_movements": "deadlifts 15 reps, 70 kg"}
-])
-
-# Encode new data
-new_X_movement_encoded = movement_tokenizer.texts_to_matrix(new_workouts["combined_movements"], mode='binary')
+#new_workouts = X_test[0:2]
+new_workouts = X_train[0:2]
 
 # Predict and output results
-predictions = model.predict(new_X_movement_encoded)
-print(f"Predicted times for new workouts: {predictions.flatten()}")
+predictions = model.predict(new_workouts)
+print("Predictions:", predictions)
+print("Actual:", y_train[0:2])
