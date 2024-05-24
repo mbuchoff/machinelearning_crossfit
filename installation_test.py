@@ -110,7 +110,7 @@ workout_log = [
         "time_minutes": 12
     },
     {
-        "date": date(2024, 5, 23),
+        "date": date(2024, 5, 22),
         "movements": [
             {"movement": "dumbbell snatch", "repetitions": 30, "weight": 50},
             {"movement": "dumbbell walking lunges", "repetitions": 30, "weight": 50},
@@ -118,6 +118,20 @@ workout_log = [
             {"movement": "dumbbell snatch", "repetitions": 30, "weight": 50},
             {"movement": "dumbbell walking lunges", "repetitions": 30, "weight": 50},
             {"movement": "double unders", "repetitions": 22, "weight": 0},
+        ],
+        "time_minutes": 12
+    },
+    {
+        "date": date(2024, 5, 24),
+        "movements": [
+            {"movement": "kettlebell swings", "repetitions": 30, "weight": 53},
+            {"movement": "handstand pushups", "repetitions": 12, "weight": 0},
+            {"movement": "pullups", "repetitions": 12, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 30, "weight": 53},
+            {"movement": "handstand pushups", "repetitions": 12, "weight": 0},
+            {"movement": "pullups", "repetitions": 12, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 30, "weight": 53},
+            {"movement": "handstand pushups", "repetitions": 7, "weight": 0},
         ],
         "time_minutes": 12
     },
@@ -135,10 +149,12 @@ valid_movements = [
     "dumbbell walking lunges",
     "front rack lunges",
     "front squats",
+    "handstand pushups",
     "hang power cleans",
     "jumping air squats",
     "kettlebell swings",
     "power cleans",
+    "pullups",
     "push jerks",
     "pushups",
     "ring dips",
