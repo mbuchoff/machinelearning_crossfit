@@ -152,4 +152,11 @@ workout_log = [
         ],
         "time_minutes": 22
     },
+    {
+        "date": date(2024, 5, 29),
+        "movements": [
+            {"movement": "running", "repetitions": 1609.34, "weight": 0 },
+        ],
+        "time_minutes": 6 + 32/60
+    }
 ]
