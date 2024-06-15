@@ -14,7 +14,7 @@ workout_log = [
             {"movement": "burpees", "repetitions": 15, "weight": 0},
             {"movement": "strict pullups", "repetitions": 10, "weight": 0},
         ],
-        "time_minutes": 10+32/60
+        "time_minutes": 10+32/60,
     },
     {
         "date": date(2024, 5, 8),
@@ -26,7 +26,7 @@ workout_log = [
             {"movement": "dual kb front rack step-ups, 20\" box", "repetitions": 30, "weight": 53},
             {"movement": "running", "repetitions": 25, "weight": 0},
         ],
-        "time_minutes": 15
+        "time_minutes": 15,
     },
     {
         "date": date(2024, 5, 10),
@@ -40,7 +40,7 @@ workout_log = [
             {"movement": "hang power cleans", "repetitions": 7, "weight": 155},
             {"movement": "jumping air squats", "repetitions": 30, "weight": 0},
         ],
-        "time_minutes": 7
+        "time_minutes": 7,
     },
     {
         "date": date(2024, 5, 10),
@@ -56,7 +56,7 @@ workout_log = [
             {"movement": "rest", "repetitions": 2, "weight": 0},
             {"movement": "running", "repetitions": 800, "weight": 0},
         ],
-        "time_minutes": 12+56/60
+        "time_minutes": 12+56/60,
     },
     {
         "date": date(2024, 5, 13),
@@ -75,7 +75,7 @@ workout_log = [
             {"movement": "rest", "repetitions": 1, "weight": 95},
             {"movement": "running", "repetitions": 200, "weight": 0},
         ],
-        "time_minutes": 17
+        "time_minutes": 17,
     },
     {
         "date": date(2024, 5, 15),
@@ -89,7 +89,7 @@ workout_log = [
             {"movement": "strict pullups", "repetitions": 8, "weight": 0},
             {"movement": "running", "repetitions": 800, "weight": 0},
         ],
-        "time_minutes": 12 + (51/60)
+        "time_minutes": 12 + (51/60),
     },
     {
         "date": date(2024, 5, 20),
@@ -101,7 +101,7 @@ workout_log = [
             {"movement": "push jerks", "repetitions": 7, "weight": 155},
             {"movement": "front squats", "repetitions": 3, "weight": 155},
         ],
-        "time_minutes": 12
+        "time_minutes": 12,
     },
     {
         "date": date(2024, 5, 22),
@@ -113,7 +113,7 @@ workout_log = [
             {"movement": "dumbbell walking lunges", "repetitions": 30, "weight": 50},
             {"movement": "double unders", "repetitions": 22, "weight": 0},
         ],
-        "time_minutes": 12
+        "time_minutes": 12,
     },
     {
         "date": date(2024, 5, 24),
@@ -127,7 +127,7 @@ workout_log = [
             {"movement": "kettlebell swings", "repetitions": 30, "weight": 53},
             {"movement": "handstand pushups", "repetitions": 7, "weight": 0},
         ],
-        "time_minutes": 12
+        "time_minutes": 12,
     },
     {
         "date": date(2024, 5, 24),
@@ -150,13 +150,59 @@ workout_log = [
             {"movement": "deadlifts", "repetitions": 22, "weight": 185},
             {"movement": "pullups", "repetitions": 5, "weight": 0},
         ],
-        "time_minutes": 22
+        "time_minutes": 22,
     },
     {
         "date": date(2024, 5, 29),
         "movements": [
             {"movement": "running", "repetitions": 1609.34, "weight": 0 },
         ],
-        "time_minutes": 6 + 32/60
-    }
+        "time_minutes": 6 + 32/60,
+    },
+    {
+        "date": date(2024, 5, 31),
+        "movements": [
+            {"movement": "power cleans", "repetitions": 21, "weight": 135},
+            {"movement": "ring rows", "repetitions": 21, "weight": 10},
+            {"movement": "power cleans", "repetitions": 15, "weight": 135},
+            {"movement": "ring rows", "repetitions": 15, "weight": 10},
+            {"movement": "power cleans", "repetitions": 9, "weight": 135},
+            {"movement": "ring rows", "repetitions": 9, "weight": 10},
+        ],
+        "time_minutes": 7 + 16/60,
+    },
+    {
+        "date": date(2024, 6, 7),
+        "movements": [
+            {"movement": "kettlebell snatches", "repetitions": 57, "weight": 53},
+        ],
+        "time_minutes": 5,
+    },
+    {
+        "date": date(2024, 6, 10),
+        "movements": [
+            {"movement": "kettlebell swings", "repetitions": 50, "weight": 53},
+            {"movement": "double unders", "repetitions": 100, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 50, "weight": 53},
+            {"movement": "double unders", "repetitions": 100, "weight": 0},
+            {"movement": "kettlebell swings", "repetitions": 50, "weight": 53},
+            {"movement": "double unders", "repetitions": 100, "weight": 0},
+        ],
+        "time_minutes": 19 + 43/60,
+    },
+    {
+        "date": date(2024, 6, 12),
+        "movements": [
+            {"movement": "strict presses", "repetitions": 7, "weight": 95},
+            {"movement": "hang power cleans", "repetitions": 14, "weight": 95},
+            {"movement": "lateral burpees", "repetitions": 21, "weight": 0},
+            {"movement": "strict presses", "repetitions": 7, "weight": 95},
+            {"movement": "hang power cleans", "repetitions": 14, "weight": 95},
+            {"movement": "lateral burpees", "repetitions": 21, "weight": 0},
+            {"movement": "strict presses", "repetitions": 7, "weight": 95},
+            {"movement": "hang power cleans", "repetitions": 14, "weight": 95},
+            {"movement": "lateral burpees", "repetitions": 21, "weight": 0},
+        ],
+        "time_minutes": 12 + 29/60,
+    },
 ]
